@@ -1,9 +1,17 @@
-export default function Contact() {
+import { Container } from "@mui/system";
+import { Typography } from '@mui/material';
 
+export default () => {
     return (
-        <>
-        <h1>Contact</h1>
-        </>
-
+        <Container maxWidth="md" sx={{py: 2}}>
+            <Typography
+                variant="h3"
+                component="h2"
+                color="dark"
+                align="center"
+            >
+                Contact
+            </Typography>
+        </Container>
     )
 }
