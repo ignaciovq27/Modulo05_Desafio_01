@@ -1,7 +1,6 @@
 import { Container } from "@mui/system";
-import { TextField, Typography } from '@mui/material';
-import TextareaAutosize from '@mui/base/TextareaAutosize';
-import Button from '@mui/material/Button';
+import { Typography } from '@mui/material';
+import Form from "../components/Form";
 
 // import { FormHelperText } from '@mui/material';
 
@@ -18,92 +17,28 @@ export default () => {
                 flexDirection: 'column'
             }}>
             <div>
-                <form action="/">
-                    <Typography
-                        variant="h4"
-                        component="h2"
-                        color="dark"
-                        align="center"
-                    >
-                        Cuentanos, ¿En que te podemos ayudar?
-                    </Typography>
-
-                    <Typography
-                        component="h3"
-                        align="center"
-                        sx={{
-                            display: { xs: 'flex', md: 'flex' },
-                            justifyContent: "center",
-                            fontSize: 16,
-                            fontWeight: 500,
-                            pt: 2,
-                            pb: 1
-                        }}
-                    >📧 Correo:
-                    </Typography>
-                    <TextField
-                        align="center"
-                        id="outlined-error-helper-text"
-                        // id="outlined-basic"
-                        label="nombre@ejemplo.com"
-                        variant="outlined"
-                        required
-                        // helperText="Incorrect entry."
-                        // error
-                        sx={{
-                            display: { xs: 'flex', md: 'flex' },
-                            justifyContent: "center",
-                            width: '60ch'
-                        }}
-
-                    />
-                    {/* <br></br> */}
-                    <Typography
-                        component="h3"
-                        align="center"
-                        sx={{
-                            display: { xs: 'flex', md: 'flex' },
-                            justifyContent: "center",
-                            fontSize: 16,
-                            fontWeight: 500,
-                            pt: 2,
-                            pb: 1
-                        }}
-                    >📧 Descripción:
-                    </Typography>
-                    <div>
-                        <TextareaAutosize
-                            align="center"
-                            minRows={10}
-                            maxRows={20}
-                            required
-                            // aria-label="empty textarea"
-                            // variant="outlined"
-                            placeholder="Escribe tu mensaje..."
-                            style={{ width: 550 }}
-                            sx={{
-                                display: { xs: 'flex', md: 'flex' },
-                                justifyContent: "center",
-                                width: '60ch',
-                            }}
-                        />
-                    </div>
-                    <Button
-                        variant="contained"
-                        align="center"
-                        type="submit"
-                        sx={{
-                            display: { xs: 'flex', md: 'flex' },
-                            justifyContent: "center",
-                            maxWidth: '30px',
-                            maxHeight: '50px',
-                            minWidth: '100px',
-                            minHeight: '30px',
-                            color: "white",
-                            fontFamily: 'righteous',
-                            mt: 1
-                        }}>Enviar</Button>
-                </form>
+                <Typography
+                    variant="h4"
+                    component="h2"
+                    color="dark"
+                    align="center"
+                >
+                    Cuéntanos, ¿En que te podemos ayudar?
+                </Typography>
+                <Form />
+                <Typography
+                    variant="h2"
+                    component="h2"
+                    align="center"
+                    sx={{
+                        display: { xs: 'flex', md: 'flex' },
+                        justifyContent: "center",
+                        fontSize: 16,
+                        fontWeight: 500,
+                        pt: 1
+                    }}
+                >･°✧ ヽ(〃＾▽＾〃)ﾉ ✧°･
+                </Typography>
             </div>
         </Container>
     )

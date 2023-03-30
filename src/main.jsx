@@ -19,11 +19,11 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#66a6ec",
-      // 4d2e07
-      // 66a6ec
+      // 66a6ec celeste
+      // 4d2e07 chocolate
     },
     secondary: {
-      main: "#f50057",
+      main: "#4d2e07",
     },
   },
 });

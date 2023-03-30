@@ -15,7 +15,8 @@ function Copyright() {
                 color: 'white',
                 fontSize: 10,
             }}>
-            El lugar de los pasteles felices✧°･
+            El lugar de los pasteles felices
+            {' '}
             {'© '}
             {' '}
             {new Date().getFullYear()}
@@ -59,7 +60,7 @@ export default function Footer() {
                             fontFamily: 'righteous',
                         }}
                     >
-                        HAPPY-CAKE
+                        HAPPY-CAKE✧°･
                     </Typography>
                 </Container>
                 <Copyright />

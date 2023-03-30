@@ -41,7 +41,13 @@ export default function NewNavbar() {
         <AppBar position="static">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <CakeIcon fontSize="large" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: 'white', my: 0 }} />
+                    <CakeIcon fontSize="large"
+                        sx={{
+                            display: { xs: 'none', md: 'flex' },
+                            mr: 1,
+                            color: 'white',
+                            my: 0
+                        }} />
                     <Typography
                         variant="h5"
                         noWrap
@@ -57,7 +63,7 @@ export default function NewNavbar() {
                             textDecoration: 'none',
                             flexGrow: 1,
                         }}
-                    >HAPPY-CAKE
+                    >HAPPY-CAKE✧°･
                     </Typography>
                     <Box sx={{
                         flexGrow: 1,
@@ -152,7 +158,7 @@ export default function NewNavbar() {
                             color: 'white',
                             textDecoration: 'none',
                         }}
-                    >HAPPY-CAKE
+                    >HAPPY-CAKE✧°･
                     </Typography>
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                         <Button
