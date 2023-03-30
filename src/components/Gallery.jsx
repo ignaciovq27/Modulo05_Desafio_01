@@ -17,6 +17,8 @@ export default function Gallery() {
         <Box
             align="center"
             sx={{
+                m: 0,
+                p: 0,
                 width: 1000,
                 height: 550,
                 overflowY: 'clip',
@@ -24,10 +26,46 @@ export default function Gallery() {
                 py: 1,
                 display: { xs: 'flex', md: 'flex' },
                 justifyContent: "center",
-                flexDirection: 'column'
+                alignItems: "center",
+                flexDirection: 'column',
+                '@media screen and (max-width: 375px)': {
+                    width: 270
+                },
+                '@media screen and (max-width: 767px)': {
+                    width: 330
+                },
+                '@media screen and (min-width: 767px)': {
+                    width: 700,
+                    height: 650,
+                },
+                '@media screen and (min-width: 991px)': {
+                    width: 900,
+                    height: 650,
+                },
+                '@media screen and (min-width: 1200px)': {
+                    width: 1140,
+                    height: 650,
+                }
             }}>
             <ImageList
-                sx={{ width: 900, height: 550 }}
+                sx={{
+                    width: 900,
+                    height: 550,
+                    '@media screen and (max-width: 767px)': {
+                        width: 270,
+                    },
+                    '@media screen and (min-width: 767px)': {
+                        width: 710,
+                    },
+                    '@media screen and (min-width: 991px)': {
+                        width: 900,
+                        height: 650,
+                    },
+                    '@media screen and (min-width: 1200px)': {
+                        width: 1140,
+                        height: 650,
+                    }
+                }}
                 variant="quilted"
                 cols={4}
                 gap={8}

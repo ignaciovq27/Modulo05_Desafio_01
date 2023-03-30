@@ -13,10 +13,35 @@ export default () => {
                 py: 2,
                 display: { xs: 'flex', md: 'flex' },
                 justifyContent: "center",
-                flexDirection: 'column'
+                flexDirection: 'column',
+                '@media screen and (max-width: 576px)': {
+                    width: 300,
+                },
+                "@media screen (min-width: 577px) and (max-width: 767px)": {
+                    width: 300,
+                },
+                '@media screen and (min-width: 767px)': {
+                    width: 700,
+                },
+                '@media screen and (min-width: 991px)': {
+                    width: 900,
+                }
             }}>
             <div>
-                <form action="/send">
+                <form action="/send" sx={{
+                    '@media screen and (max-width: 576px)': {
+                        width: 200,
+                    },
+                    "@media screen (min-width: 577px) and (max-width: 767px)": {
+                        width: 300,
+                    },
+                    '@media screen and (min-width: 767px)': {
+                        width: 500,
+                    },
+                    '@media screen and (min-width: 991px)': {
+                        width: 900,
+                    }
+                }}>
                     <Typography
                         component="h3"
                         align="center"
@@ -37,13 +62,20 @@ export default () => {
                         label="nombre@ejemplo.com"
                         variant="outlined"
                         required
-                        autofocus
                         // helperText="Incorrect entry."
                         // error
                         sx={{
                             display: { xs: 'flex', md: 'flex' },
                             justifyContent: "center",
-                            width: '60ch'
+                            '@media screen and (max-width: 576px)': {
+                                width: '30ch'
+                            },
+                            '@media screen and (min-width: 767px)': {
+                                width: '40ch'
+                            },
+                            '@media screen and (min-width: 991px)': {
+                                width: '60ch'
+                            }
                         }}
                     />
                     {/* <br></br> */}
@@ -62,18 +94,17 @@ export default () => {
                     </Typography>
                     <div>
                         <TextareaAutosize
+                            className="textarea-style"
                             align="center"
                             minRows={10}
-                            maxRows={20}
+                            maxRows={60}
                             required
                             // aria-label="empty textarea"
                             // variant="outlined"
                             placeholder="Escribe tu mensaje..."
-                            style={{ width: 550 }}
                             sx={{
                                 display: { xs: 'flex', md: 'flex' },
                                 justifyContent: "center",
-                                width: '60ch',
                             }}
                         />
                     </div>

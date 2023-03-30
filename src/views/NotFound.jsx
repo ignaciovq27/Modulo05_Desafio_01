@@ -35,6 +35,18 @@ export default function NotFound() {
                     component="h2"
                     color="dark"
                     align="center"
+                    sx={{
+                        '@media screen and (max-width: 375px)': {
+                            width: 300,
+                            fontSize: 30
+                        },
+                        '@media screen and (min-width: 767px)': {
+                            width: 500
+                        },
+                        '@media screen and (min-width: 991px)': {
+                            width: 900,
+                        }
+                    }}
                 >
                     La ruta que intentas consultar no existe (๑◕︵◕๑)
                 </Typography>
@@ -56,7 +68,7 @@ export default function NotFound() {
                         minHeight: '30px',
                         color: "white",
                         fontFamily: 'righteous',
-                        mt: 2
+                        mt: 2,
                     }}>Volver a inicio
                 </Button>
             </div>

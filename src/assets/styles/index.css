@@ -23,3 +23,43 @@
     height: 100vh;
     background-color: rgb(251, 251, 251);
 }
+
+.textarea-style {
+    width: 650px
+}
+
+/* Media --------------------------------------------------- */
+/* -- Extra Small */
+@media (max-width: 576px) {
+    .textarea-style {
+        width: 270px
+    }
+}
+
+/* sm Small */
+@media (min-width: 576px) {
+    .textarea-style {
+        width: 400px
+    }
+}
+
+/* md Medium */
+@media (min-width: 577px) and (max-width: 767px) {
+    .textarea-style {
+        width: 300px
+    }
+}
+
+/* md Medium */
+@media (min-width: 768px) {
+    .textarea-style {
+        width: 580px
+    }
+}
+
+/* lg Large */
+@media (min-width: 992px) {
+    .textarea-style {
+        width: 580px
+    }
+}

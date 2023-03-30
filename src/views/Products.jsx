@@ -6,7 +6,7 @@ export default () => {
 
     return (
         <Container
-            maxWidth="md"
+            maxWidth="lg"
             align="center"
             sx={{
                 py: 2,
@@ -32,7 +32,16 @@ export default () => {
                         justifyContent: "center",
                         fontSize: 16,
                         fontWeight: 500,
-                        pt: 1
+                        pt: 1,
+                        '@media screen and (max-width: 767px)': {
+                            width: 300,
+                        },
+                        '@media screen and (min-width: 767px)': {
+                            width: 700,
+                        },
+                        '@media screen and (min-width: 991px)': {
+                            width: 900,
+                        }
                     }}
                 >･°✧ Para alegrar tus días especiales  (◍•ᴗ•◍)❤✧°･
                 </Typography>
