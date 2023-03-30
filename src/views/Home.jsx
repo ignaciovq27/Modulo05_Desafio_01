@@ -1,8 +1,6 @@
-//components
 import { Container } from "@mui/system";
 import { Typography } from '@mui/material';
 import MyCard from "../components/MyCard";
-// import { FloatingActionButton } from "../components/FloatingActionButton";
 import FAButton from "../components/FAButton";
 
 

@@ -6,7 +6,6 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 
 export default () => {
-    // const url = "/"
     return (
         <Container
             maxWidth="md"
@@ -25,7 +24,6 @@ export default () => {
             }}>
             <div>
                 <form
-                    // action={url}
                     sx={{
                         '@media screen and (max-width: 576px)': {
                             width: 200,
@@ -56,12 +54,9 @@ export default () => {
                     <TextField
                         align="center"
                         id="outlined-error-helper-text"
-                        // id="outlined-basic"
                         label="nombre@ejemplo.com"
                         variant="outlined"
                         required
-                        // helperText="Incorrect entry."
-                        // error
                         sx={{
                             display: { xs: 'flex', md: 'flex' },
                             justifyContent: "center",
@@ -79,7 +74,6 @@ export default () => {
                             }
                         }}
                     />
-                    {/* <br></br> */}
                     <Typography
                         component="h3"
                         align="center"
@@ -100,8 +94,6 @@ export default () => {
                             minRows={10}
                             maxRows={60}
                             required
-                            // aria-label="empty textarea"
-                            // variant="outlined"
                             placeholder="Escribe tu mensaje..."
                             sx={{
                                 display: { xs: 'flex', md: 'flex' },

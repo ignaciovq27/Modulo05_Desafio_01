@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -10,11 +10,6 @@ import Typography from '@mui/material/Typography';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import Collapse from '@mui/material/Collapse';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { red } from '@mui/material/colors';
-import Avatar from '@mui/material/Avatar';
-import { shadows } from '@mui/system';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -39,11 +34,6 @@ export default function MyCard() {
         <div>
             <Card sx={{ maxWidth: 345 }}>
                 <CardHeader
-                    // avatar={
-                    //     <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                    //         R
-                    //     </Avatar>
-                    // }
                     action={
                         <IconButton aria-label="settings">
                             <MoreVertIcon />
@@ -64,7 +54,6 @@ export default function MyCard() {
                     </Typography>
                 </CardContent>
                 <CardActions
-                    // disableSpacing
                     align="center"
                     sx={{
                         py: 2,
@@ -78,24 +67,7 @@ export default function MyCard() {
                     <IconButton aria-label="share">
                         <ShareIcon />
                     </IconButton>
-                    {/* <ExpandMore
-                    expand={expanded}
-                    onClick={handleExpandClick}
-                    aria-expanded={expanded}
-                    aria-label="show more"
-                >
-                    <ExpandMoreIcon />
-                </ExpandMore> */}
                 </CardActions>
-                {/* <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <CardContent>
-                    <Typography paragraph>Method:</Typography>
-                    <Typography paragraph>
-                        Heat 1/2 cup of the broth in a pot until simmering, add saffron and set
-                        aside for 10 minutes.
-                    </Typography>
-                </CardContent>
-            </Collapse> */}
             </Card>
         </div>
     );

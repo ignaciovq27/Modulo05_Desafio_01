@@ -53,10 +53,6 @@ export default function NotFound() {
                 >
                     La ruta que intentas consultar no existe (๑◕︵◕๑)
                 </Typography>
-                {/* <Link to="/" className="text-black ms-3 text-decoration-underline">
-
-                    Volver a inicio
-                </Link> */}
                 <Button
                     variant="contained"
                     align="center"
