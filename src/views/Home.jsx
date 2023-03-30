@@ -24,20 +24,24 @@ export default function Home() {
                 color="dark"
                 align="center"
             >
-                Bienvenido a&nbsp;<span><Typography
-                    variant="h4"
-                    component="span"
-                    color="dark"
-                    align="center"
-                    sx={{
-
-                        fontSize: 28,
-                        fontWeight: 700,
-                        letterSpacing: '.1rem',
-                        fontFamily: 'righteous',
-                    }}
-                >HAPPY-CAKE✧°･
-                </Typography></span>
+                Bienvenido a&nbsp;<span>
+                    <Typography
+                        variant="h4"
+                        component="span"
+                        color="dark"
+                        align="center"
+                        sx={{
+                            display: { xs: 'flex', sm: "inline", md: 'inline' },
+                            justifyContent: "center",
+                            flexDirection: 'column',
+                            fontSize: 28,
+                            fontWeight: 700,
+                            letterSpacing: '.1rem',
+                            fontFamily: 'righteous',
+                        }}
+                    >HAPPY-CAKE✧°･
+                    </Typography>
+                </span>
             </Typography>
 
             <Typography
@@ -45,11 +49,17 @@ export default function Home() {
                 component="h2"
                 align="center"
                 sx={{
-                    display: { xs: 'flex', md: 'flex' },
+                    display: { xs: 'flex', md: 'inline' },
                     justifyContent: "center",
                     fontSize: 16,
                     fontWeight: 500,
-                    py: 1
+                    py: 1,
+                    '@media screen and (max-width: 375px)': {
+                        width: 200
+                    },
+                    '@media screen and (min-width: 767px)': {
+                        width: 700
+                    }
                 }}
             >(ﾉ◕ヮ◕)ﾉ*:･°✧ El lugar de los pasteles felices✧°･
             </Typography>

@@ -37,6 +37,7 @@ export default () => {
                         label="nombre@ejemplo.com"
                         variant="outlined"
                         required
+                        autofocus
                         // helperText="Incorrect entry."
                         // error
                         sx={{
@@ -57,7 +58,7 @@ export default () => {
                             pt: 2,
                             pb: 1
                         }}
-                    >📧 Descripción:
+                    >💬 Descripción:
                     </Typography>
                     <div>
                         <TextareaAutosize
