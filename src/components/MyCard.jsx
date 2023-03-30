@@ -55,7 +55,7 @@ export default function MyCard() {
                 <CardMedia
                     component="img"
                     height="130"
-                    image="/src/assets/imgs/cake_07.png"
+                    image="/imgs/cake_07.png"
                     alt="cake_07"
                 />
                 <CardContent >

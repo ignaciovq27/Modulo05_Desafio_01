@@ -41,8 +41,7 @@ export default () => {
                         fontSize: 16,
                         fontWeight: 500,
                         pt: 1
-                    }}
-                >･°✧ ヽ(〃＾▽＾〃)ﾉ ✧°･
+                    }}>･°✧ ヽ(〃＾▽＾〃)ﾉ ✧°･
                 </Typography>
             </div>
         </Container>

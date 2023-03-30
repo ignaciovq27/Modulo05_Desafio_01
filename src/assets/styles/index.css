@@ -30,23 +30,23 @@
 
 /* Media --------------------------------------------------- */
 /* -- Extra Small */
-@media (max-width: 576px) {
+@media (max-width: 376px) {
     .textarea-style {
         width: 270px
     }
 }
 
 /* sm Small */
-@media (min-width: 576px) {
+@media (min-width: 376px) and (max-width: 576px) {
     .textarea-style {
-        width: 400px
+        width: 270px
     }
 }
 
 /* md Medium */
-@media (min-width: 577px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
     .textarea-style {
-        width: 300px
+        width: 400px
     }
 }
 

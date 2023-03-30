@@ -3,8 +3,10 @@ import { TextField } from '@mui/material';
 import { Typography } from '@mui/material';
 import TextareaAutosize from '@mui/base/TextareaAutosize';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 export default () => {
+    // const url = "/"
     return (
         <Container
             maxWidth="md"
@@ -20,28 +22,24 @@ export default () => {
                 "@media screen (min-width: 577px) and (max-width: 767px)": {
                     width: 300,
                 },
-                '@media screen and (min-width: 767px)': {
-                    width: 700,
-                },
-                '@media screen and (min-width: 991px)': {
-                    width: 900,
-                }
             }}>
             <div>
-                <form action="/send" sx={{
-                    '@media screen and (max-width: 576px)': {
-                        width: 200,
-                    },
-                    "@media screen (min-width: 577px) and (max-width: 767px)": {
-                        width: 300,
-                    },
-                    '@media screen and (min-width: 767px)': {
-                        width: 500,
-                    },
-                    '@media screen and (min-width: 991px)': {
-                        width: 900,
-                    }
-                }}>
+                <form
+                    // action={url}
+                    sx={{
+                        '@media screen and (max-width: 576px)': {
+                            width: 200,
+                        },
+                        "@media screen and (min-width: 376px) and (max-width: 767px)": {
+                            width: 300,
+                        },
+                        '@media screen and (min-width: 767px)': {
+                            width: 500,
+                        },
+                        '@media screen and (min-width: 991px)': {
+                            width: 900,
+                        }
+                    }}>
                     <Typography
                         component="h3"
                         align="center"
@@ -68,6 +66,9 @@ export default () => {
                             display: { xs: 'flex', md: 'flex' },
                             justifyContent: "center",
                             '@media screen and (max-width: 576px)': {
+                                width: '30ch'
+                            },
+                            "@media screen and (min-width: 376px) and (max-width: 767px)": {
                                 width: '30ch'
                             },
                             '@media screen and (min-width: 767px)': {
@@ -112,6 +113,8 @@ export default () => {
                         variant="contained"
                         align="center"
                         type="submit"
+                        component={Link}
+                        to="/error"
                         sx={{
                             display: { xs: 'flex', md: 'flex' },
                             justifyContent: "center",

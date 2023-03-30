@@ -40,6 +40,9 @@ export default function NotFound() {
                             width: 300,
                             fontSize: 30
                         },
+                        "@media screen and (min-width: 376px) and (max-width: 767px)": {
+                            width: 350,
+                        },
                         '@media screen and (min-width: 767px)': {
                             width: 500
                         },
