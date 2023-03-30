@@ -13,9 +13,8 @@ import NewNavbar from './components/NewNavbar'
 function App() {
 
   return (
-    <div className="app">
+    <div className="app background-pattern">
       <NewNavbar />
-
       <main>
         <Routes>
           <Route path='/' element={<Home />} />

@@ -1,5 +1,6 @@
 import { Container } from "@mui/system";
-import { TextField, Typography } from '@mui/material';
+import { TextField } from '@mui/material';
+import { Typography } from '@mui/material';
 import TextareaAutosize from '@mui/base/TextareaAutosize';
 import Button from '@mui/material/Button';
 
@@ -89,7 +90,8 @@ export default () => {
                             color: "white",
                             fontFamily: 'righteous',
                             mt: 2
-                        }}>Enviar </Button>
+                        }}>Enviar
+                    </Button>
                 </form>
             </div>
         </Container>

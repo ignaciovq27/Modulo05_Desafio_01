@@ -110,7 +110,8 @@ export default function NewNavbar() {
                                         fontWeight: 100,
                                     }}
                                     component={Link}
-                                    to="/">🏠 HOME </Typography>
+                                    to="/">🏠 HOME
+                                </Typography>
                             </MenuItem>
                             <MenuItem onClick={handleCloseNavMenu}>
                                 <Typography
@@ -124,7 +125,8 @@ export default function NewNavbar() {
                                         fontWeight: 100,
                                     }}
                                     component={Link}
-                                    to="/products"> 🍰 PRODUCTOS </Typography>
+                                    to="/products"> 🍰 PRODUCTOS
+                                </Typography>
                             </MenuItem>
                             <MenuItem onClick={handleCloseNavMenu}>
                                 <Typography
@@ -138,7 +140,8 @@ export default function NewNavbar() {
                                         fontWeight: 100,
                                     }}
                                     component={Link}
-                                    to="/contact">📝 CONTACTO </Typography>
+                                    to="/contact">📝 CONTACTO
+                                </Typography>
                             </MenuItem>
                         </Menu>
                     </Box>
