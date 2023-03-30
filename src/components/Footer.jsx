@@ -1,11 +1,10 @@
-// import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-// import { Link } from "react-router-dom";
-// import { NavLink } from 'react-router-dom';
+import CakeIcon from '@mui/icons-material/Cake';
 
 function Copyright() {
+
     return (
         <Typography
             variant="h5"
@@ -16,7 +15,9 @@ function Copyright() {
                 color: 'white',
                 fontSize: 10,
             }}>
-            {'Copyright © '}
+            El lugar de los pasteles felices✧°･
+            {'© '}
+            {' '}
             {new Date().getFullYear()}
             {'.'}
         </Typography>
@@ -25,29 +26,44 @@ function Copyright() {
 
 export default function Footer() {
     return (
-        <Box
-            component="footer"
-            sx={{
-                py: 1,
-                px: 2,
-                mt: 2,
-                bgcolor: 'primary.main',
-                color: 'white',
-            }}
-        >
-            <Container maxWidth="sm">
-                <Typography
-                    variant="h5"
-                    component="h6"
+        <div className="footer-style">
+            <Box
+                component="footer"
+                sx={{
+                    py: 1,
+                    px: 2,
+                    mt: 2,
+                    bgcolor: 'primary.main',
+                    color: 'white',
+                }
+                }
+            >
+                <Container
+                    maxWidth="md"
                     align="center"
                     sx={{
-                        fontSize: 14,
-                    }}
-                >
-                    My sticky footer can be found here. 🎂 🧁 🍥
-                </Typography>
+                        display: { xs: 'flex', md: 'flex' },
+                        justifyContent: "center",
+                    }}>
+                    <CakeIcon fontSize="sm"
+                        sx={{ mr: 1, color: 'white', my: 0 }} />
+                    <Typography
+                        variant="h5"
+                        component="h6"
+                        align="center"
+                        sx={{
+                            display: { xs: 'flex', md: 'flex' },
+                            fontSize: 14,
+                            fontWeight: 700,
+                            letterSpacing: '.1rem',
+                            fontFamily: 'righteous',
+                        }}
+                    >
+                        HAPPY-CAKE
+                    </Typography>
+                </Container>
                 <Copyright />
-            </Container>
-        </Box>
+            </Box>
+        </div>
     );
 }

@@ -7,12 +7,13 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-// import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-// import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import CakeIcon from '@mui/icons-material/Cake';
 import { Link, NavLink } from 'react-router-dom';
+// import Tooltip from '@mui/material/Tooltip';
+// import Avatar from '@mui/material/Avatar';
+
 export default function NewNavbar() {
 
 
@@ -58,8 +59,11 @@ export default function NewNavbar() {
                         }}
                     >HAPPY-CAKE
                     </Typography>
-
-                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, color: 'white' }}>
+                    <Box sx={{
+                        flexGrow: 1,
+                        display: { xs: 'flex', md: 'none' },
+                        color: 'white',
+                    }}>
                         <IconButton
                             size="large"
                             aria-label="account of current user"
@@ -91,31 +95,47 @@ export default function NewNavbar() {
                             <MenuItem onClick={handleCloseNavMenu}>
                                 <Typography
                                     textAlign="center"
-                                    component={Link}
                                     align="center"
-                                    sx={{ py: 0, color: "black", textDecoration: "none", }}
+                                    sx={{
+                                        py: 0,
+                                        color: "black",
+                                        textDecoration: "none",
+                                        fontFamily: 'righteous',
+                                        fontWeight: 100,
+                                    }}
+                                    component={Link}
                                     to="/">🏠 HOME </Typography>
                             </MenuItem>
                             <MenuItem onClick={handleCloseNavMenu}>
                                 <Typography
                                     textAlign="center"
-                                    component={Link}
                                     align="center"
-                                    sx={{ py: 0, color: "black", textDecoration: "none", }}
+                                    sx={{
+                                        py: 0,
+                                        color: "black",
+                                        textDecoration: "none",
+                                        fontFamily: 'righteous',
+                                        fontWeight: 100,
+                                    }}
+                                    component={Link}
                                     to="/products"> 🍰 PRODUCTOS </Typography>
                             </MenuItem>
                             <MenuItem onClick={handleCloseNavMenu}>
                                 <Typography
                                     textAlign="center"
-                                    component={Link}
                                     align="center"
-                                    sx={{ py: 0, color: "black", textDecoration: "none", }}
+                                    sx={{
+                                        py: 0,
+                                        color: "black",
+                                        textDecoration: "none",
+                                        fontFamily: 'righteous',
+                                        fontWeight: 100,
+                                    }}
+                                    component={Link}
                                     to="/contact">📝 CONTACTO </Typography>
                             </MenuItem>
                         </Menu>
                     </Box>
-
-
                     <CakeIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, color: 'white' }} />
                     <Typography
                         variant="h5"
@@ -137,7 +157,13 @@ export default function NewNavbar() {
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                         <Button
                             onClick={handleCloseNavMenu}
-                            sx={{ my: 1, color: 'white', display: 'block' }}
+                            sx={{
+                                my: 1,
+                                color: 'white',
+                                display: 'block',
+                                fontFamily: 'righteous',
+                                fontWeight: 100,
+                            }}
                             component={NavLink}
                             to="/"
                         >
@@ -145,7 +171,13 @@ export default function NewNavbar() {
                         </Button>
                         <Button
                             onClick={handleCloseNavMenu}
-                            sx={{ my: 1, color: 'white', display: 'block' }}
+                            sx={{
+                                my: 1,
+                                color: 'white',
+                                display: 'block',
+                                fontFamily: 'righteous',
+                                fontWeight: 100,
+                            }}
                             component={NavLink}
                             to="/products"
                         >
@@ -153,7 +185,13 @@ export default function NewNavbar() {
                         </Button>
                         <Button
                             onClick={handleCloseNavMenu}
-                            sx={{ my: 1, color: 'white', display: 'block' }}
+                            sx={{
+                                my: 1,
+                                color: 'white',
+                                display: 'block',
+                                fontFamily: 'righteous',
+                                fontWeight: 100,
+                            }}
                             component={NavLink}
                             to="/contact"
                         >

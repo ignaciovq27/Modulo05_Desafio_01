@@ -1,17 +1,110 @@
 import { Container } from "@mui/system";
-import { Typography } from '@mui/material';
+import { TextField, Typography } from '@mui/material';
+import TextareaAutosize from '@mui/base/TextareaAutosize';
+import Button from '@mui/material/Button';
+
+// import { FormHelperText } from '@mui/material';
+
 
 export default () => {
     return (
-        <Container maxWidth="md" sx={{py: 2}}>
-            <Typography
-                variant="h3"
-                component="h2"
-                color="dark"
-                align="center"
-            >
-                Contact
-            </Typography>
+        <Container
+            maxWidth="md"
+            align="center"
+            sx={{
+                py: 2,
+                display: { xs: 'flex', md: 'flex' },
+                justifyContent: "center",
+                flexDirection: 'column'
+            }}>
+            <div>
+                <form action="/">
+                    <Typography
+                        variant="h4"
+                        component="h2"
+                        color="dark"
+                        align="center"
+                    >
+                        Cuentanos, ¿En que te podemos ayudar?
+                    </Typography>
+
+                    <Typography
+                        component="h3"
+                        align="center"
+                        sx={{
+                            display: { xs: 'flex', md: 'flex' },
+                            justifyContent: "center",
+                            fontSize: 16,
+                            fontWeight: 500,
+                            pt: 2,
+                            pb: 1
+                        }}
+                    >📧 Correo:
+                    </Typography>
+                    <TextField
+                        align="center"
+                        id="outlined-error-helper-text"
+                        // id="outlined-basic"
+                        label="nombre@ejemplo.com"
+                        variant="outlined"
+                        required
+                        // helperText="Incorrect entry."
+                        // error
+                        sx={{
+                            display: { xs: 'flex', md: 'flex' },
+                            justifyContent: "center",
+                            width: '60ch'
+                        }}
+
+                    />
+                    {/* <br></br> */}
+                    <Typography
+                        component="h3"
+                        align="center"
+                        sx={{
+                            display: { xs: 'flex', md: 'flex' },
+                            justifyContent: "center",
+                            fontSize: 16,
+                            fontWeight: 500,
+                            pt: 2,
+                            pb: 1
+                        }}
+                    >📧 Descripción:
+                    </Typography>
+                    <div>
+                        <TextareaAutosize
+                            align="center"
+                            minRows={10}
+                            maxRows={20}
+                            required
+                            // aria-label="empty textarea"
+                            // variant="outlined"
+                            placeholder="Escribe tu mensaje..."
+                            style={{ width: 550 }}
+                            sx={{
+                                display: { xs: 'flex', md: 'flex' },
+                                justifyContent: "center",
+                                width: '60ch',
+                            }}
+                        />
+                    </div>
+                    <Button
+                        variant="contained"
+                        align="center"
+                        type="submit"
+                        sx={{
+                            display: { xs: 'flex', md: 'flex' },
+                            justifyContent: "center",
+                            maxWidth: '30px',
+                            maxHeight: '50px',
+                            minWidth: '100px',
+                            minHeight: '30px',
+                            color: "white",
+                            fontFamily: 'righteous',
+                            mt: 1
+                        }}>Enviar</Button>
+                </form>
+            </div>
         </Container>
     )
 }
